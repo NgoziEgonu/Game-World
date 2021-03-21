@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Lamborghini 1.6.ma
-//Last modified: Sun, Mar 21, 2021 07:11:23 PM
+//Last modified: Sun, Mar 21, 2021 07:11:52 PM
 //Codeset: 1252
 requires maya "2020";
 requires "mtoa" "4.1.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202011110415-b1e20b88e2";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "27864E9B-4F2B-5029-85C2-C6869921CF0B";
+fileInfo "UUID" "8A3F33CE-4D65-B7C1-7707-CDA13F3F76B7";
 createNode transform -s -n "persp";
 	rename -uid "4888794E-418B-6460-3A94-5AABABB2F3AC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.6478017095004203 1.7253216124009076 -2.8986914685262541 ;
+	setAttr ".t" -type "double3" 6.8699522452648454 8.4446510362872793 -3.5398909290042724 ;
 	setAttr ".r" -type "double3" -51.938352735351494 456.99999999973323 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "18A5E369-4FD0-2443-87EB-8DA04811A1C6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 2.5104381101600701;
+	setAttr ".coi" 11.044568462633466;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
