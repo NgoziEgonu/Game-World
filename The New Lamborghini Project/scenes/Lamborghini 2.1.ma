@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Lamborghini 2.1.ma
-//Last modified: Wed, Apr 07, 2021 05:35:35 PM
+//Last modified: Wed, Apr 07, 2021 05:36:39 PM
 //Codeset: 1252
 requires maya "2020";
 requires "mtoa" "4.1.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202011110415-b1e20b88e2";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "439C32A6-4A56-12A3-12A1-839D7ED9925B";
+fileInfo "UUID" "D2F6B53C-453C-03FF-CB4F-B691E9102718";
 createNode transform -s -n "persp";
 	rename -uid "4888794E-418B-6460-3A94-5AABABB2F3AC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.35127497807389 0.71236894224192393 -1.4688780954996297 ;
-	setAttr ".r" -type "double3" -24.938352752720309 283.39999999858992 0 ;
+	setAttr ".t" -type "double3" 3.5298560340490832 1.7683014117286979 9.8839366826893915 ;
+	setAttr ".r" -type "double3" -6.3383527530968804 373.39999999847532 1.0217392928991805e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "18A5E369-4FD0-2443-87EB-8DA04811A1C6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 3.1983866420743143;
+	setAttr ".coi" 7.6581516498110442;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -168,7 +168,6 @@ createNode renderLayer -n "defaultRenderLayer";
 	setAttr ".g" yes;
 createNode displayLayer -n "Reference_Images";
 	rename -uid "4CAF3123-4FF2-8865-3B7D-A7ACD0A023D6";
-	setAttr ".v" no;
 	setAttr ".c" 6;
 	setAttr ".do" 1;
 createNode script -n "uiConfigurationScriptNode";
