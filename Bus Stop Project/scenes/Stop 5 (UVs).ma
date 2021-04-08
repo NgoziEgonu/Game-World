@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Stop 5 (UVs).ma
-//Last modified: Thu, Apr 08, 2021 10:11:28 PM
+//Last modified: Thu, Apr 08, 2021 10:12:13 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202011110415-b1e20b88e2";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "UUID" "776132F2-477A-5DDA-1E28-F88FF3CF76CB";
+fileInfo "UUID" "8427EA56-46A4-4DD9-1ADB-06BCA10CCEDF";
 createNode transform -s -n "persp";
 	rename -uid "D6512911-4A09-7316-2D48-B296C0FEFE87";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 10.851749109998902 -1.2620718086444924 2.6953103123329409 ;
-	setAttr ".r" -type "double3" 5.6616472762704095 -281.7999999999991 -3.8882837257958552e-15 ;
+	setAttr ".t" -type "double3" 10.108644510308043 1.7284279786680337 -3.7915481847758032 ;
+	setAttr ".r" -type "double3" -9.9383527237302722 -246.99999999999355 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "533F1AB1-40F1-12D8-9096-25B94BCA9B64";
 	setAttr -k off ".v" no;
