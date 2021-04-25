@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: Lamborghini 2.5 UV Time.ma
-//Last modified: Sun, Apr 25, 2021 04:23:54 PM
+//Last modified: Sun, Apr 25, 2021 04:35:25 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -13,17 +13,17 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "202011110415-b1e20b88e2";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19042)\n";
-fileInfo "UUID" "3ED0F36D-49FB-EA92-1035-21B203FC33A5";
+fileInfo "UUID" "75878B73-4355-29AA-36E2-30ADE1976316";
 createNode transform -s -n "persp";
 	rename -uid "4888794E-418B-6460-3A94-5AABABB2F3AC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -9.6487123662897769 3.634530657368245 -0.73529072160421549 ;
-	setAttr ".r" -type "double3" 1056.2616472246534 -814.9999999998679 0 ;
+	setAttr ".t" -type "double3" -1.6197493061810011 3.5391393613717068 -4.9430219737603789 ;
+	setAttr ".r" -type "double3" 1042.4616472246166 -887.39999999984832 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "18A5E369-4FD0-2443-87EB-8DA04811A1C6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 10.032140434929719;
+	setAttr ".coi" 6.4716934826596875;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -363,21 +363,33 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.86453628540039063 0.88701874017715454 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 29 ".uvst[0].uvsp[0:28]" -type "float2" 0.375 0 0.625 0 0.375
-		 0.25 0.625 0.25 0.375 0.5 0.625 0.5 0.375 0.75 0.625 0.75 0.375 1 0.625 1 0.875 0
-		 0.875 0.25 0.125 0 0.125 0.25 0.5625 0.5 0.5625 0.75 0.5625 0 0.5625 1 0.5625 0.25
-		 0.5 0.5 0.5 0.75 0.5 0 0.5 1 0.5 0.25 0.4375 0.5 0.4375 0.75 0.4375 0 0.4375 1 0.4375
-		 0.25;
+	setAttr -s 29 ".uvst[0].uvsp[0:28]" -type "float2" 0.84433687 0.80622089
+		 0.88473582 0.80622089 0.84433687 0.84661978 0.88473582 0.84661978 0.84433687 0.88701868
+		 0.88473582 0.88701868 0.84433687 0.92741764 0.88473582 0.92741764 0.84433687 0.96781659
+		 0.88473582 0.96781659 0.92513466 0.80622089 0.92513466 0.84661978 0.80393791 0.80622089
+		 0.80393791 0.84661978 0.87463605 0.88701868 0.87463605 0.92741764 0.87463605 0.80622089
+		 0.87463605 0.96781659 0.87463605 0.84661978 0.86453629 0.88701868 0.86453629 0.92741764
+		 0.86453629 0.80622089 0.86453629 0.96781659 0.86453629 0.84661978 0.85443658 0.88701868
+		 0.85443658 0.92741764 0.85443658 0.80622089 0.85443658 0.96781659 0.85443658 0.84661978;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 12 ".pt[8:19]" -type "float3"  0.02772242 0 0.3988038 0.02772242 
-		0 0.3988038 0.02772242 0 0.3988038 0.02772242 0 0.3988038 0 0 0.11751226 0 0 0.11751226 
-		0 0 0.11751226 0 0 0.11751226 -0.02772242 0 0.41530955 -0.02772242 0 0.41530955 -0.02772242 
-		0 0.41530955 -0.02772242 0 0.41530955;
+	setAttr -s 13 ".pt";
+	setAttr ".pt[8]" -type "float3" 0.02772242 0 0.3988038 ;
+	setAttr ".pt[9]" -type "float3" 0.02772242 0 0.3988038 ;
+	setAttr ".pt[10]" -type "float3" 0.02772242 0 0.3988038 ;
+	setAttr ".pt[11]" -type "float3" 0.02772242 0 0.3988038 ;
+	setAttr ".pt[12]" -type "float3" 0 0 0.11751226 ;
+	setAttr ".pt[13]" -type "float3" 0 0 0.11751226 ;
+	setAttr ".pt[14]" -type "float3" 0 0 0.11751226 ;
+	setAttr ".pt[15]" -type "float3" 0 0 0.11751226 ;
+	setAttr ".pt[16]" -type "float3" -0.02772242 0 0.41530955 ;
+	setAttr ".pt[17]" -type "float3" -0.02772242 0 0.41530955 ;
+	setAttr ".pt[18]" -type "float3" -0.02772242 0 0.41530955 ;
+	setAttr ".pt[19]" -type "float3" -0.02772242 0 0.41530955 ;
 	setAttr -s 20 ".vt[0:19]"  -0.5 -0.5 0.5 0.5 -0.5 0.5 -0.5 0.5 0.5 0.5 0.5 0.5
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5 0.25 0.5 -0.5 0.25 -0.5 -0.5
 		 0.25 -0.5 0.5 0.25 0.5 0.5 -2.9802322e-08 0.5 -0.5 -2.9802322e-08 -0.5 -0.5 -2.9802322e-08 -0.5 0.5
@@ -1850,7 +1862,7 @@ createNode mesh -n "pPipe4Shape" -p "pPipe4";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:359]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.70220626538572595 0.1445930006537901 ;
+	setAttr ".pv" -type "double2" 0.70220625400543213 0.1445930004119873 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 428 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.56731778 0.27947974 0.58230543
